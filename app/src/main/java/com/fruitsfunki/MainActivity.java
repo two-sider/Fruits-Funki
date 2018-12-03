@@ -1,5 +1,9 @@
 package com.fruitsfunki;
 
+
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+
 import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.design.widget.FloatingActionButton;
@@ -17,8 +21,6 @@ import com.google.firebase.firestore.FirebaseFirestore;
 import java.util.HashMap;
 import java.util.Map;
 
-    
-
 
 public class MainActivity extends AppCompatActivity {
 
@@ -27,10 +29,12 @@ public class MainActivity extends AppCompatActivity {
     FirebaseFirestore db = FirebaseFirestore.getInstance();
     private Object View;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
 
 
         FloatingActionButton btn_ingresar = findViewById(R.id.btn_ingresar);
@@ -46,23 +50,10 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-
-
-
-
 }
 
 
-    public void menu(View v) {
 
-
-
-        Intent menu = new Intent(getApplicationContext(), menu.class);
-        startActivity(menu);
-
-
-
-    }
 
 
 
