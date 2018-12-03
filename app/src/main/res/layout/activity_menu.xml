@@ -11,7 +11,7 @@
     <Button
         android:id="@+id/button1"
         android:layout_width="match_parent"
-        android:layout_height="125dp"
+        android:layout_height="115dp"
         android:layout_weight="1"
         android:background="@drawable/batido1"
         android:onClick="menu"
@@ -27,11 +27,11 @@
     <Button
         android:id="@+id/button2"
         android:layout_width="match_parent"
-        android:layout_height="125dp"
+        android:layout_height="115dp"
         android:layout_weight="1"
         android:background="@drawable/batido2"
         android:onClick="menu2"
-        android:text="batido 2"
+        android:text="BATIDO 2"
         android:textSize="30sp" />
 
     <Space
@@ -43,7 +43,7 @@
     <Button
         android:id="@+id/button3"
         android:layout_width="match_parent"
-        android:layout_height="125dp"
+        android:layout_height="115dp"
         android:layout_weight="1"
         android:background="@drawable/batido3"
         android:onClick="menu3"
