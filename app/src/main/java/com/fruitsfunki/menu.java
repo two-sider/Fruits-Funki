@@ -25,9 +25,6 @@ public class menu extends AppCompatActivity {
         startActivity(batido2);
     }
 
-    public void menu3(View v) {
-        Intent batido3 = new Intent(getApplicationContext(), batido3.class);
-        startActivity(batido3);
-    }
+
 
 }

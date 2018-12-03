@@ -11,7 +11,7 @@
     <Button
         android:id="@+id/button1"
         android:layout_width="match_parent"
-        android:layout_height="115dp"
+        android:layout_height="180dp"
         android:layout_weight="1"
         android:background="@drawable/batido1"
         android:onClick="menu"
@@ -20,33 +20,18 @@
 
     <Space
         android:layout_width="match_parent"
-        android:layout_height="10dp"
+        android:layout_height="20dp"
 
         android:layout_weight="1" />
 
     <Button
         android:id="@+id/button2"
         android:layout_width="match_parent"
-        android:layout_height="115dp"
+        android:layout_height="180dp"
         android:layout_weight="1"
-        android:background="@drawable/batido2"
+        android:background="@drawable/metabolico2"
         android:onClick="menu2"
         android:text="BATIDO 2"
         android:textSize="30sp" />
 
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="10dp"
-
-        android:layout_weight="1" />
-
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="match_parent"
-        android:layout_height="115dp"
-        android:layout_weight="1"
-        android:background="@drawable/batido3"
-        android:onClick="menu3"
-        android:text="BATIDO 3"
-        android:textSize="30sp" />
 </LinearLayout>
