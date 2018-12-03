@@ -4,6 +4,7 @@ import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -22,11 +23,22 @@ public class batido1 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_batido1);
 
+
+
+    }
+
+
+
+    public void insertar_batido_normal(View view){
+
+
+
+
         // Create a new user with a first and last name
         Map<String, Object> user = new HashMap<>();
-        user.put("Nombre_batido", "Xpres");
-        user.put("Descripcion", "muy rico");
-        user.put("Ingredientes", "azucar rubia, helado");
+        user.put("Nombre_batido", "zpres");
+        user.put("Descripcion", "medio rico");
+        user.put("Ingredientes", "azuca2, helado2");
         user.put("Precio", 2500);
 
 
@@ -45,6 +57,8 @@ public class batido1 extends AppCompatActivity {
                         Log.w("mensaje", "Error adding document", e);
                     }
                 });
+
+
 
     }
 
