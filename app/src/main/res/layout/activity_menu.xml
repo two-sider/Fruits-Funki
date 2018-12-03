@@ -31,7 +31,7 @@
         android:layout_weight="1"
         android:background="@drawable/metabolico2"
         android:onClick="menu2"
-        android:text="BATIDO 2"
+        android:text="BATIDOS 2"
         android:textSize="30sp" />
 
 </LinearLayout>
