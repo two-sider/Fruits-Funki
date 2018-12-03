@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "191475679001",
+    "firebase_url": "https://fruits-funki.firebaseio.com",
+    "project_id": "fruits-funki",
+    "storage_bucket": "fruits-funki.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:191475679001:android:91fe1aa0d7a4e00a",
+        "android_client_info": {
+          "package_name": "com.fruitsfunki"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "191475679001-sfk6noctlfo97qva9jn41pna76co0dbl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAA-dxn1wvHOtxun_nCpumgBOwBOyrZS7o"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
