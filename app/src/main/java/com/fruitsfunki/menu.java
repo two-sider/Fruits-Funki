@@ -16,14 +16,18 @@ public class menu extends AppCompatActivity {
 
 
     public void menu(View v) {
-
-
-
         Intent batido1 = new Intent(getApplicationContext(), batido1.class);
         startActivity(batido1);
+    }
 
+    public void menu2(View v) {
+        Intent batido2 = new Intent(getApplicationContext(), batido2.class);
+        startActivity(batido2);
+    }
 
-
+    public void menu3(View v) {
+        Intent batido3 = new Intent(getApplicationContext(), batido3.class);
+        startActivity(batido3);
     }
 
 }
