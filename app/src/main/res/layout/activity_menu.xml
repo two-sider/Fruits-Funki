@@ -15,7 +15,7 @@
         android:layout_weight="1"
         android:background="@drawable/batido1"
         android:onClick="menu"
-        android:text="Batidos 1"
+        android:text="Batidos1"
         android:textSize="30sp" />
 
     <Space
