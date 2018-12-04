@@ -45,8 +45,8 @@
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
             android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Nombre" />
+            android:hint="Nombre"
+            android:inputType="textPersonName" />
     </RelativeLayout>
 
     <RelativeLayout
@@ -60,8 +60,8 @@
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
             android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Descripción" />
+            android:hint="Descripcion"
+            android:inputType="textPersonName" />
     </RelativeLayout>
 
     <RelativeLayout
@@ -75,8 +75,8 @@
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
             android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Ingredientes" />
+            android:hint="Ingredientes"
+            android:inputType="textPersonName" />
     </RelativeLayout>
 
     <RelativeLayout
