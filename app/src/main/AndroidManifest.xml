@@ -19,6 +19,7 @@
         <activity android:name=".menu" />
         <activity android:name=".batido1" />
         <activity android:name=".batido2" />
+        <activity android:name=".eliminar_batidos_normales"></activity>
     </application>
 
 </manifest>
