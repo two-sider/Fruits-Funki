@@ -12,6 +12,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -24,7 +25,7 @@ import java.util.Map;
 
 public class MainActivity extends AppCompatActivity {
 
-    FloatingActionButton btn_ingresar;
+    Button btn_ingresar;
 
     FirebaseFirestore db = FirebaseFirestore.getInstance();
     private Object View;
@@ -37,17 +38,14 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-        FloatingActionButton btn_ingresar = findViewById(R.id.btn_ingresar);
-        btn_ingresar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-                Intent menu = new Intent(getApplicationContext(), menu.class);
-                startActivity(menu);
-
-            }
-        });
-
+        Button btn_ingresar = findViewById(R.id.btn_ingresar);
+    btn_ingresar.setOnClickListener(new View.OnClickListener() {
+        @Override
+        public void onClick(View view) {
+            Intent menu = new Intent(getApplicationContext(), menu.class);
+            startActivity(menu);
+        }
+    });
 
 
 }

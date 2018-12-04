@@ -5,116 +5,65 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/fondo2"
     xmlns:card_view="http://schemas.android.com/apk/res-auto"
     tools:context=".batido2">
 
 
-    <TextView
-        android:id="@+id/textView7"
-        android:layout_width="match_parent"
-        android:layout_height="62dp" />
-
     <ImageView
-        android:id="@+id/imageView4"
+        android:id="@+id/imageView"
         android:layout_width="match_parent"
-        android:layout_height="125dp"
-        app:srcCompat="@drawable/logotipo" />
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="323dp"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:text="Batido Normal"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            app:fontFamily="sans-serif-smallcaps" />
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <EditText
-            android:id="@+id/txt_nombre"
-            android:layout_width="319dp"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Nombre" />
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <EditText
-            android:id="@+id/txt_descripcion"
-            android:layout_width="319dp"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Descripción" />
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <EditText
-            android:id="@+id/txt_ingredientes"
-            android:layout_width="319dp"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Ingredientes" />
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <EditText
-            android:id="@+id/txt_precio"
-            android:layout_width="319dp"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Precio" />
-    </RelativeLayout>
+        android:layout_height="191dp"
+        card_view:srcCompat="@drawable/metabolico1" />
 
     <TextView
-        android:id="@+id/textView8"
+        android:id="@+id/textView"
         android:layout_width="match_parent"
-        android:layout_height="12dp" />
-    <RelativeLayout
+        android:layout_height="61dp"
+        android:layout_weight="1"
+        android:text="Batido Especial"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/txt_nombre"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Nombre" />
 
-        <Button
-            android:id="@+id/button"
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:background="#ffe627"
-            android:onClick="insertar_batido_normal"
-            android:text="Ingresar" />
+    <EditText
+        android:id="@+id/txt_descripcion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Descripción" />
 
-    </RelativeLayout>
+    <EditText
+        android:id="@+id/txt_ingredientes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Ingredientes" />
 
+    <EditText
+        android:id="@+id/txt_precio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Precio" />
 
+    <Button
+        android:id="@+id/btn_ingresar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:onClick="insertar_batido_especial"
+        android:text="Ingresar" />
 </LinearLayout>

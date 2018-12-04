@@ -30,7 +30,7 @@
         android:layout_height="wrap_content">
 
         <Button
-            android:id="@+id/button3"
+            android:id="@+id/btn_ingresar"
             android:layout_width="278dp"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
