@@ -5,28 +5,41 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@drawable/fondo3"
     tools:context=".MainActivity">
 
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="93dp"
+        android:textSize="24sp" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="169dp"
+
+        app:srcCompat="@drawable/logotipo" />
 
     <TextView
-        android:id="@+id/et_titulo"
+        android:id="@+id/textView5"
         android:layout_width="match_parent"
-        android:layout_height="382dp"
-        android:layout_weight="1"
-        android:text="Bienvenido a Fruits Funki "
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:fontFamily="serif" />
+        android:layout_height="47dp" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/btn_ingresar"
-        android:layout_width="70dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="right"
-        android:layout_weight="1"
-        android:clickable="true"
-        app:backgroundTint="@android:color/holo_red_light"
-        app:srcCompat="@drawable/ic_stars" />
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="278dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="#ffe627"
+            android:text="Acceder"
+            android:textColor="@android:color/black" />
+    </RelativeLayout>
+
 
 
 </LinearLayout>
