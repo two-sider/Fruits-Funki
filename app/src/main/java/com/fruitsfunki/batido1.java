@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.EditText;
 
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -16,6 +17,8 @@ import java.util.Map;
 
 public class batido1 extends AppCompatActivity {
 
+    private EditText et_nombre, et_descripcion, et_ingredientes, et_precio;
+
     FirebaseFirestore db = FirebaseFirestore.getInstance();
 
     @Override
@@ -23,7 +26,10 @@ public class batido1 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_batido1);
 
-
+    et_nombre = findViewById(R.id.txt_nombre);
+    et_descripcion = findViewById(R.id.txt_descripcion);
+    et_ingredientes = findViewById(R.id.txt_ingredientes);
+    et_precio = findViewById(R.id.txt_precio);
 
     }
 
@@ -31,19 +37,22 @@ public class batido1 extends AppCompatActivity {
 
     public void insertar_batido_normal(View view){
 
+    String nombre = et_nombre.getText().toString();
+    String descripcion = et_descripcion.getText().toString();
+    String ingredientes = et_ingredientes.getText().toString();
+    int precio = Integer.parseInt(et_precio.getText().toString());
 
 
-
-        // Create a new user with a first and last name
+        // Crear uno nuevo con los datos que vienen de la pagina
         Map<String, Object> user = new HashMap<>();
-        user.put("Nombre_batido", "zpres");
-        user.put("Descripcion", "medio rico");
-        user.put("Ingredientes", "azuca2, helado2");
-        user.put("Precio", 2500);
+        user.put("Nombre_batido", nombre);
+        user.put("Descripcion", descripcion);
+        user.put("Ingredientes", ingredientes);
+        user.put("Precio", precio);
 
 
 // Add a new document with a generated ID
-        db.collection("users")
+        db.collection("BatidosNormales")
                 .add(user)
                 .addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
                     @Override

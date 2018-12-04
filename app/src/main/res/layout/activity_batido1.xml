@@ -16,7 +16,7 @@
         android:textSize="30sp" />
 
     <EditText
-        android:id="@+id/nombre"
+        android:id="@+id/txt_nombre"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
@@ -25,7 +25,7 @@
         android:text="Nombre" />
 
     <EditText
-        android:id="@+id/des"
+        android:id="@+id/txt_descripcion"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
@@ -34,7 +34,7 @@
         android:text="Descripción" />
 
     <EditText
-        android:id="@+id/ingre"
+        android:id="@+id/txt_ingredientes"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
@@ -43,13 +43,13 @@
         android:text="Ingredientes" />
 
     <EditText
-        android:id="@+id/precio"
+        android:id="@+id/txt_precio"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Precios" />
+        android:text="Precio" />
 
     <Button
         android:id="@+id/button"
