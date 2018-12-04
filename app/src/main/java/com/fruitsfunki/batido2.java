@@ -24,6 +24,11 @@ public class batido2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_batido2);
 
+        et_nombre = findViewById(R.id.txt_nombre);
+        et_descripcion = findViewById(R.id.txt_descripcion);
+        et_ingredientes = findViewById(R.id.txt_ingredientes);
+        et_precio = findViewById(R.id.txt_precio);
+
     }
 
     public void insertar_batido_especial(View view){
