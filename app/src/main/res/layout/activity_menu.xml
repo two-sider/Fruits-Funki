@@ -15,7 +15,7 @@
         android:layout_weight="1"
         android:background="@drawable/batido1"
         android:onClick="menu"
-        android:text="Batidos1"
+        android:text="Batidos FRUTALES"
         android:textSize="30sp" />
 
     <Space
@@ -31,7 +31,7 @@
         android:layout_weight="1"
         android:background="@drawable/metabolico2"
         android:onClick="menu2"
-        android:text="BATIDOS 2"
+        android:text="BATIDOS METABOLICOS"
         android:textSize="30sp" />
 
 </LinearLayout>
