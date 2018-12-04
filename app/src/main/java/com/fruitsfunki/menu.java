@@ -24,6 +24,10 @@ public class menu extends AppCompatActivity {
         Intent batido2 = new Intent(getApplicationContext(), batido2.class);
         startActivity(batido2);
     }
+    public void menu3(View v) {
+        Intent batido3 = new Intent(getApplicationContext(), eliminar_batidos_normales.class);
+        startActivity(batido3);
+    }
 
 
 
