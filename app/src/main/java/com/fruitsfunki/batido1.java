@@ -61,6 +61,10 @@ public class batido1 extends AppCompatActivity {
                     public void onSuccess(DocumentReference documentReference) {
                         Log.d("mensaje", "DocumentSnapshot added with ID: " + documentReference.getId());
                         Toast.makeText(getApplicationContext(), "Datos ingresados correctamente", Toast.LENGTH_SHORT).show();
+                        et_nombre.setText("");
+                        et_descripcion.setText("");
+                        et_ingredientes.setText("");
+                        et_precio.setText("");
                     }
                 })
                 .addOnFailureListener(new OnFailureListener() {
